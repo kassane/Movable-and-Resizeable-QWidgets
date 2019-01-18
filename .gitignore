@@ -1,0 +1,15 @@
+build/*.txt
+.vscode/*.json
+build/*.cmake
+build/*.json
+build/*.ninja
+build/CMakeFiles/*.log
+build/CMakeFiles/*.txt
+build/CMakeFiles/*.check_cache
+build/CMakeFiles/*.bin
+build/CMakeFiles/*.cxx
+build/CMakeFiles/3.13.0/*.bin
+build/CMakeFiles/3.13.0/*.cmake
+build/CMakeFiles/3.13.0/CompilerIdCXX/*.cpp
+build/CMakeFiles/3.13.0/CompilerIdCXX/*.exe
+build/CMakeFiles/TContainer_autogen.dir/*.cmake
