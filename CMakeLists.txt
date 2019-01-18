@@ -11,18 +11,18 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(Qt5 COMPONENTS Core Gui Widgets REQUIRED)
 
 set(HEADER_FILES
-	tcontainer.hpp
-	mainwindow.h
+	headers/tcontainer.hpp
+	headers/mainwindow.h
 )
-set(SOURCE_FILES
-	tcontainer.cpp
-	mainwindow.cpp
+set(SOURC_FILES
+	sources/tcontainer.cpp
+	sources/mainwindow.cpp
 	main.cpp
 )
 
 qt5_wrap_cpp(project_sources_moc ${project_headers})
 
-add_executable(${PROJECT_NAME} ${SOURCE_FILES} ${HEADER_FILES} ${project_sources_moc})
+add_executable(${PROJECT_NAME} ${SOURC_FILES} ${HEADER_FILES} ${project_sources_moc})
 target_compile_definitions(${PROJECT_NAME} PRIVATE $<$<OR:$<CONFIG:Debug>,$<CONFIG:RelWithDebInfo>>:QT_QML_DEBUG>)
 target_link_libraries(${PROJECT_NAME} PRIVATE Qt5::Core Qt5::Gui Qt5::Widgets)
 target_include_directories(${PROJECT_NAME}
