@@ -1,4 +1,4 @@
-#include "mainwindow.h"
+#include "headers/mainwindow.h"
 #include <QApplication>
 
 #ifdef Q_OS_WIN
@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 
     QApplication a(argc, argv);
     MainWindow w;
-    //a.setStyle("fusion");
+    a.setStyle("fusion");
     //w.setWindowFlags(Qt::FramelessWindowHint | Qt::WindowStaysOnTopHint );
     w.setMinimumSize(QSize(800,600));
     //w.setStyleSheet("QWidget{background-color:#1d1d1d;color: #ffffff;}");

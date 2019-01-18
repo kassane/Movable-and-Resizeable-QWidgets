@@ -13,3 +13,15 @@ build/CMakeFiles/3.13.0/*.cmake
 build/CMakeFiles/3.13.0/CompilerIdCXX/*.cpp
 build/CMakeFiles/3.13.0/CompilerIdCXX/*.exe
 build/CMakeFiles/TContainer_autogen.dir/*.cmake
+build/TContainer_autogen/moc_predefs.h
+build/.ninja_deps
+build/.ninja_log
+build/*.exe
+build/CMakeFiles/TContainer.dir/*.cpp.obj
+build/CMakeFiles/TContainer.dir/TContainer_autogen/*.cpp.obj
+build/CMakeFiles/TContainer.dir/sources/*.cpp.obj
+build/CMakeFiles/TContainer_autogen.dir/*.txt
+build/TContainer_autogen/*.cpp
+build/TContainer_autogen/K6S233IZAZ/*.cpp
+build/headers/*.cpp
+build/headers/*.cpp_parameters

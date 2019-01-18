@@ -20,13 +20,13 @@ set(SOURC_FILES
 	main.cpp
 )
 
-qt5_wrap_cpp(project_sources_moc ${project_headers})
+#qt5_wrap_cpp(project_sources_moc ${HEADER_FILES})
 
-add_executable(${PROJECT_NAME} ${SOURC_FILES} ${HEADER_FILES} ${project_sources_moc})
+add_executable(${PROJECT_NAME} ${SOURC_FILES} ${HEADER_FILES})
 target_compile_definitions(${PROJECT_NAME} PRIVATE $<$<OR:$<CONFIG:Debug>,$<CONFIG:RelWithDebInfo>>:QT_QML_DEBUG>)
 target_link_libraries(${PROJECT_NAME} PRIVATE Qt5::Core Qt5::Gui Qt5::Widgets)
 target_include_directories(${PROJECT_NAME}
     PUBLIC
-        ${CMAKE_CURRENT_SOURCE_DIR}
+        ${CMAKE_CURRENT_SOURCE_DIR}/sources
     PRIVATE
         ${CMAKE_CURRENT_BINARY_DIR})

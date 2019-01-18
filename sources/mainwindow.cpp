@@ -3,11 +3,11 @@
  * email: aliks-os@yandex.ru
  */
 
-#include "mainwindow.h"
+#include "headers/mainwindow.h"
 //#include "ui_mainwindow.h"
 #include <QLabel>
 #include <QPushButton>
-#include "tcontainer.hpp"
+#include "headers/tcontainer.hpp"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent)//, ui(new Ui::MainWindow)
